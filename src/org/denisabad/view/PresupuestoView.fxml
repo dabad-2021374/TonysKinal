@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="470.0" prefWidth="850.0" styleClass="fondoGradiente" stylesheets="@../resource/TonysKinal.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.denisabad.controller.PresupuestoController">
+   <children>
+      <Pane prefHeight="470.0" prefWidth="211.0">
+         <children>
+            <Button id="button2" fx:id="btnNuevo" layoutX="53.0" layoutY="220.0" mnemonicParsing="false" onAction="#nuevo" prefHeight="35.0" prefWidth="105.0" styleClass="botoncito" text="Nuevo">
+               <font>
+                  <Font name="Britannic Bold" size="14.0" />
+               </font>
+               <graphic>
+                  <ImageView fx:id="imgNuevo" fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/agregar.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor></Button>
+            <Button fx:id="btnEditar" layoutX="53.0" layoutY="340.0" mnemonicParsing="false" onAction="#editar" prefHeight="35.0" prefWidth="105.0" styleClass="botoncito" text="Editar">
+               <font>
+                  <Font name="Britannic Bold" size="14.0" />
+               </font>
+               <graphic>
+                  <ImageView fx:id="imgEditar" fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/editar.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button fx:id="btnEliminar" layoutX="53.0" layoutY="280.0" mnemonicParsing="false" onAction="#eliminar" prefHeight="35.0" prefWidth="105.0" styleClass="botoncito" text="Eliminar">
+               <font>
+                  <Font name="Britannic Bold" size="14.0" />
+               </font>
+               <graphic>
+                  <ImageView fx:id="imgEliminar" fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/eliminar.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button fx:id="btnReporte" layoutX="53.0" layoutY="400.0" mnemonicParsing="false" onAction="#reporte" prefHeight="35.0" prefWidth="105.0" styleClass="botoncito" text="Reporte">
+               <font>
+                  <Font name="Britannic Bold" size="14.0" />
+               </font>
+               <graphic>
+                  <ImageView fx:id="imgReporte" fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/Reporte.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Label layoutX="27.0" layoutY="164.0" prefHeight="41.0" prefWidth="158.0" text="Presupuesto" textFill="#2c447c">
+               <font>
+                  <Font name="Britannic Bold" size="28.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="102.0" fitWidth="105.0" layoutX="55.0" layoutY="62.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/presupuesto.png" />
+               </image></ImageView>
+         </children>
+      </Pane>
+      <GridPane fx:id="grpFecha" layoutX="258.0" layoutY="34.0" prefHeight="86.0" prefWidth="528.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="149.0" minWidth="10.0" prefWidth="149.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="145.0" minWidth="10.0" prefWidth="137.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="143.0" minWidth="10.0" prefWidth="119.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="153.0" minWidth="10.0" prefWidth="122.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="fecha Solicitud" textFill="#2c447c" GridPane.columnIndex="2">
+               <font>
+                  <Font name="Britannic Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label text="Cantidad Presupuesto" textFill="#2c447c" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Britannic Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label prefHeight="21.0" prefWidth="113.0" text="Código Empresa" textFill="#2c447c" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Britannic Bold" size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtCodigoPresupuesto" editable="false" GridPane.columnIndex="1">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <GridPane.margin>
+                  <Insets right="10.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="txtCantidadPresupuesto" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets right="10.0" />
+               </GridPane.margin></TextField>
+            <Label text="Código Presupuesto" textFill="#2c447c">
+               <font>
+                  <Font name="Britannic Bold" size="15.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="cmbCodigoEmpresa" prefWidth="150.0" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+         </children>
+         <opaqueInsets>
+            <Insets right="3.0" />
+         </opaqueInsets>
+      </GridPane>
+      <ImageView fitHeight="48.0" fitWidth="54.0" layoutX="1.0" layoutY="10.0" onMouseClicked="#ventanaEmpresa" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/Regresar.png" />
+         </image></ImageView>
+      <TableView fx:id="tblPresupuestos" layoutX="230.0" layoutY="142.0" onKeyReleased="#seleccionarElemento" onMouseClicked="#seleccionarElemento" prefHeight="301.0" prefWidth="601.0">
+        <columns>
+          <TableColumn fx:id="colCodigoPresupuesto" prefWidth="107.0" text="Cod. Presupuesto" />
+          <TableColumn fx:id="colFechaSolicitud" prefWidth="100.0" text="Fecha Solicitud" />
+            <TableColumn fx:id="colCantidadPresupuesto" prefWidth="281.0" text="Cantidad Presupuesto" />
+            <TableColumn fx:id="colCodigoEmpresa" prefWidth="112.0" text="Cod. Empresa" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

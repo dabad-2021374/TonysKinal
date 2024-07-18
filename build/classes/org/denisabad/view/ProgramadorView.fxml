@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="438.0" prefWidth="555.0" styleClass="fondoGradiente" stylesheets="@../resource/TonysKinal.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.denisabad.controller.ProgramadorController">
+   <children>
+      <Label layoutX="164.0" layoutY="69.0" prefHeight="31.0" prefWidth="213.0" text="Denis Sebastian Abad Santos" textFill="#3c1414" textOverrun="CLIP">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="230.0" layoutY="100.0" prefHeight="31.0" prefWidth="66.0" text="2021374" textFill="#3c1414" textOverrun="CLIP">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="236.0" layoutY="131.0" prefHeight="31.0" prefWidth="54.0" text="IN5AM" textFill="#3c1414" textOverrun="CLIP">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="146.0" layoutY="328.0" prefHeight="31.0" prefWidth="249.0" text="Contacto: dabad-2021374@kinal.edu.gt" textFill="#3c1414">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="189.0" layoutY="22.0" prefHeight="36.0" prefWidth="162.0" text="Programador" textFill="#3c1414">
+         <font>
+            <Font name="System Bold Italic" size="25.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="37.0" fitWidth="37.0" layoutX="252.0" layoutY="374.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/IconoInstagram.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="41.0" fitWidth="37.0" layoutX="318.0" layoutY="374.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/IconoFacebook.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="37.0" fitWidth="37.0" layoutX="182.0" layoutY="374.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/GitHub.png" />
+         </image>
+      </ImageView>
+      <Line endX="160.0" layoutX="240.0" layoutY="358.0" startX="-100.0" />
+      <ImageView fitHeight="173.0" fitWidth="183.0" layoutX="198.0" layoutY="140.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/FotoPersonal.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="48.0" fitWidth="54.0" layoutY="10.0" onMouseClicked="#menuPrincipal" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/Regresar.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

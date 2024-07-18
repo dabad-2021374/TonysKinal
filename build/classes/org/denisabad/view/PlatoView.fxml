@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="536.0" prefWidth="1100.0" styleClass="fondoGradiente" stylesheets="@../resource/TonysKinal.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.denisabad.controller.PlatoController">
+   <children>
+      <Pane layoutX="-8.0" onMouseClicked="#menuPrincipal" prefHeight="536.0" prefWidth="211.0">
+         <children>
+            <Button id="button2" fx:id="btnNuevo" layoutX="53.0" layoutY="220.0" mnemonicParsing="false" onMouseClicked="#nuevo" prefHeight="35.0" prefWidth="105.0" styleClass="botoncito" text="Nuevo">
+               <font>
+                  <Font name="Britannic Bold" size="14.0" />
+               </font>
+               <graphic>
+                  <ImageView fx:id="imgNuevo" fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/agregar.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button fx:id="btnEliminar" layoutX="53.0" layoutY="280.0" mnemonicParsing="false" onMouseClicked="#eliminar" prefHeight="35.0" prefWidth="105.0" styleClass="botoncito" text="Eliminar">
+               <font>
+                  <Font name="Britannic Bold" size="14.0" />
+               </font>
+               <graphic>
+                  <ImageView fx:id="imgEliminar" fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/eliminar.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button fx:id="btnEditar" layoutX="53.0" layoutY="340.0" mnemonicParsing="false" onMouseClicked="#editar" prefHeight="35.0" prefWidth="105.0" styleClass="botoncito" text="Editar">
+               <font>
+                  <Font name="Britannic Bold" size="14.0" />
+               </font>
+               <graphic>
+                  <ImageView fx:id="imgEditar" fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/editar.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button fx:id="btnReporte" layoutX="53.0" layoutY="400.0" mnemonicParsing="false" onMouseClicked="#reporte" prefHeight="35.0" prefWidth="105.0" styleClass="botoncito" text="Reporte">
+               <font>
+                  <Font name="Britannic Bold" size="14.0" />
+               </font>
+               <graphic>
+                  <ImageView fx:id="imgReporte" fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/Reporte.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Label alignment="CENTER" layoutX="40.0" layoutY="164.0" prefHeight="41.0" prefWidth="140.0" text="Platos" textFill="#2c447c">
+               <font>
+                  <Font name="Britannic Bold" size="28.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="102.0" fitWidth="105.0" layoutX="55.0" layoutY="62.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/platoDos.png" />
+               </image></ImageView>
+         </children>
+      </Pane>
+      <GridPane layoutX="285.0" layoutY="40.0" prefHeight="144.0" prefWidth="694.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="174.0" minWidth="10.0" prefWidth="154.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="174.0" minWidth="10.0" prefWidth="154.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="174.0" minWidth="10.0" prefWidth="154.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="174.0" minWidth="10.0" prefWidth="154.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Label text="Descripción" textFill="#2c447c" GridPane.columnIndex="2">
+               <font>
+                  <Font name="Britannic Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label text="Cantidad" textFill="#2c447c" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Britannic Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label prefHeight="21.0" prefWidth="127.0" text="Precio plato" textFill="#2c447c" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Britannic Bold" size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtCodigoPlato" editable="false" GridPane.columnIndex="1">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <GridPane.margin>
+                  <Insets right="10.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="txtCantidadPlato" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets right="10.0" />
+               </GridPane.margin>
+            </TextField>
+            <Label text="Código plato" textFill="#2c447c">
+               <font>
+                  <Font name="Britannic Bold" size="15.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="cmbCodigoTipoPlato" prefHeight="28.0" prefWidth="167.0" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <Label prefHeight="16.0" prefWidth="94.0" text="Nombre plato" textFill="#2c447c" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Britannic Bold" size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtNombrePlato" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets right="10.0" />
+               </GridPane.margin>
+            </TextField>
+            <Label prefHeight="21.0" prefWidth="127.0" text="Código tipo plato" textFill="#2c447c" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Britannic Bold" size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtDescripcionPlato" editable="false" GridPane.columnIndex="3">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <GridPane.margin>
+                  <Insets right="10.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="txtPrecioPlato" editable="false" GridPane.columnIndex="3" GridPane.rowIndex="1">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <GridPane.margin>
+                  <Insets right="10.0" />
+               </GridPane.margin>
+            </TextField>
+         </children>
+         <opaqueInsets>
+            <Insets right="3.0" />
+         </opaqueInsets>
+      </GridPane>
+      <TableView fx:id="tblPlatos" layoutX="219.0" layoutY="206.0" onMouseClicked="#seleccionarElemento" prefHeight="301.0" prefWidth="845.0">
+        <columns>
+          <TableColumn fx:id="colCodigoPlato" prefWidth="75.0" text="Cod. plato" />
+          <TableColumn fx:id="colCantidadPlato" prefWidth="91.0" text="Cantidad plato" />
+            <TableColumn fx:id="colNombrePlato" prefWidth="189.0" text="Nombre plato" />
+            <TableColumn fx:id="colDescripcionPlato" prefWidth="288.0" text="Descripción" />
+            <TableColumn fx:id="colPrecioPlato" prefWidth="103.0" text="Precio plato" />
+            <TableColumn fx:id="colCodigoTipoPlato" prefWidth="98.0" text="Cod. tipo plato" />
+        </columns>
+      </TableView>
+      <ImageView fitHeight="48.0" fitWidth="54.0" layoutX="10.0" layoutY="10.0" onMouseClicked="#ventanaTipoPlato" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/Regresar.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

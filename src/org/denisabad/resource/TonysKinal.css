@@ -1,0 +1,158 @@
+/*MENUBAR */
+.menu-bar {
+    -fx-background-color: #B2D1D3;
+    -fx-opacity: 0.9;
+    -fx-border-width: 2.0;
+
+}
+.menu-bar .label {
+    -fx-font-size: 14.0 pt;
+    -fx-font-family: "Arial";
+    -fx-text-fill: #2C447C;
+    -fx-font-weight: bold; 
+    -fx-padding: 10.0px;
+
+}
+.menu-bar .menu-button:hover, .menu-bar .menu-button:focused, .menu-bar .menu-button:showing {
+    -fx-background: #668993;
+    -fx-opacity: 0.6;
+    -fx-text-fill: #668993;
+}
+
+.menu-item {
+    -fx-padding: 0.0em 0.0em 0.0em 0.0em;
+    -fx-text-fill: #2C447C;
+    -fx-background: #668993
+        ;
+}
+.menu-item .label{
+    -fx-font-size: 14.0 pt;
+    -fx-text-fill: #2C447C;
+}
+
+.context-menu {
+    -fx-skin: "com.sun.javafx.scene.control.skin.ContextMenuSkin";
+    -fx-background-color:#B5D2D4;
+    -fx-border-width: 0.2px;
+    -fx-border-color: #668993;
+    /** -fx-background-insets: 0.0, 1.0, 2.0;
+    -fx-background-radius: 0.0 6.0 6.0 6.0, 0.0 5.0 5.0 5.0, 0.0 4.0 4.0 4.0;
+    -fx-padding: 0.333333em 0.083333em 0.666667em 0.083333em; 
+    -fx-opacity: 0.9;*/
+}
+
+.menu-bar .menu-button:hover, .menu-bar .menu-button:focused, .menu-bar .menu-button:showing {
+    -fx-background:  #b2d3d3;
+    -fx-border-width: 0 0 5 0;
+    -fx-border-color: #2b447c;
+    -fx-text-fill: white;
+}
+
+/*----------------------------BOTONES---------------------------------------------------------*/
+.botoncito {
+    -fx-font: "Arial";
+    -fx-text-fill: #2c447c;
+    -fx-background-color: #ebb853;
+    /*-fx-background-color: linear-gradient(to bottom,  #f38b54, #dba31c);*/
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,5.0), 20, 0, 0, 0);
+}
+.botoncito:hover {
+    -fx-translate-x: 4;
+    -fx-translate-y: -4;
+}
+
+.botoncito:pressed{
+    -fx-background-color: #dba31c;
+    -fx-translate-x: 0.9;
+    -fx-translate-y: 0.9;
+}
+/* --------------------------------------------------------------------------------- */
+.botoncito2 {
+    -fx-font: "Arial";
+    -fx-text-fill: #2c447c;
+    -fx-background-color: #729ea0;
+    /*-fx-background-color: linear-gradient(to bottom,  #f38b54, #dba31c);*/
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,5.0), 20, 0, 0, 0);
+}
+.botoncito2:hover {
+    -fx-translate-x: 4;
+    -fx-translate-y: -4;
+}
+
+.botoncito2:pressed{
+    -fx-background-color: #95cacd;
+    -fx-translate-x: 0.9;
+    -fx-translate-y: 0.9;
+}
+
+
+.boton2 {
+    -fx-font: "Arial";
+    -fx-text-fill: #2c447c;
+    -fx-background-color: transparent;
+}
+
+.boton3 {
+    -fx-background-color: transparent;
+    -fx-text-fill: #2c447c;
+    -fx-font-size: 14px;
+    -fx-padding: 0 0 3px 0;
+    -fx-border-width: 0 0 2px 0;
+    -fx-border-color: transparent;
+}
+
+.boton3:hover {
+    -fx-border-color: #2c447c;
+}
+
+.boton3:pressed{
+    -fx-text-fill: #6981ac;
+    -fx-border-color:#6981ac;
+}
+
+/*FONDO DE LA PLANTILLA*/ 
+.fondoGradiente{
+    -fx-background-color: linear-gradient(to bottom, #b1d3d3, #2b447c );
+} 
+
+.fondoGradiente2{
+    -fx-background-color: linear-gradient(to bottom,  #f38a54, #ba5543);
+}
+
+/*------------------------------------TABLEVIEW-------------------------------------------------*/
+.table-view {
+    -fx-background-color:  #729ea0;   
+}
+
+.table-view .column-header {
+    -fx-background-color: #6981ac;
+}
+
+.table-row-cell{
+    -fx-background-color: -fx-table-cell-border-color, #b1d3d3 ;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em; /* 0 */
+}
+
+.table-row-cell:odd{
+    -fx-background-color: -fx-table-cell-border-color, #b1d3d3;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em; /* 0 */  
+}
+
+.table-row-cell:selected {
+    -fx-background-color:  #7ea49c;
+    -fx-background-insets: 0;
+    -fx-background-radius: 1;
+}
+
+.text-field{
+    -fx-pref-width: 200px;
+    -fx-pref-height: 20px;
+    -fx-background-color:  #b2d3d3;
+    -fx-text-fill: black ;
+    -fx-font-family: "Britannic";
+    -fx-font-size: 15px;
+    /*    -fx-border-color: #2b447c;
+        -fx-border-width: 0 0 2 0;*/
+}
